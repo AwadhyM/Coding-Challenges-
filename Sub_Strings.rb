@@ -10,8 +10,7 @@ def word_counter(text, dictionary)
   array = text.split(/[^-a-zA-Z]/)
   frequency_of_words_in_text = Hash.new(0)
   array.each do |word|
-    next if word.empty? == true
-    next if dictionary.include?(word) == false
+    next if word.empty? == true || dictionary.include?(word) == false
      frequency_of_words_in_text[word] += 1
      dictionary.each do |dict_word|
       if word.include?(dict_word) == true && word != dict_word
