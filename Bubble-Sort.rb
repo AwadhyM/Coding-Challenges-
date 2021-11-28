@@ -1,13 +1,17 @@
+require "pry-byebug"
+
 #can't use #sort 
 
 def bubble_sort(arr)
   i = 0;
-  while i < arr.length - 1
+  while i < arr.length-1
     if arr[i] < arr[i+1]
       i+=1
     elsif arr[i] > arr[i+1]
     arr[i], arr[i+1] = arr[i+1], arr[i]
-    i += 1
+    i = 0
+    else 
+      i+=1
    end
 end
 arr
