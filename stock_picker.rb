@@ -1,4 +1,4 @@
-# implement a method #stock_picker that takes in an array of stock prices, one for each hypothetical day.
+# Implement a method #stock_picker that takes in an array of stock prices, one for each hypothetical day.
 # It should return a pair of days representing the best day to buy and the best day to sell. Days start at 0.
 # You need to buy before you can sell
 
@@ -13,5 +13,5 @@ def stock_picker(array)
   new_array
 end
 
-print stock_picker([17, 3, 6, 9, 15, 8, 6, 1, 10]) # returns expected result 1,4 
-print stock_picker([5, 8, 1, 5, 8]) #returns expected result 2,4 
+print stock_picker([17, 3, 6, 9, 15, 8, 6, 1, 10]) # returns expected result 1,4
+print stock_picker([5, 8, 1, 5, 8]) # returns expected result 2,4
